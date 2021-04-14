@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>movie app</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">MOVIEDB</a>
+      </div>
+      <div class="formel">
+        <form action="#">
+          <input type="text" id="search" placeholder="search for movie" />
+        </form>
+      </div>
+    </nav>
+    <hr />
+    <div class="container" id="container"></div>
+    <div class="movieinfo" id="movieinfo">
+      <div class="moviedetails" id="moviedetails"></div>
+      <div class="castdata" id="castdata">
+        <h3></h3>
+      </div>
+      <div class="cast" id="cast"></div>
+    </div>
+
+    <div class="pagination" id="pagination">
+      <button class="previouspage" id="previouspage">
+        &lt&ltPrevious Page
+      </button>
+      <button class="nextpage" id="nextpage">Next Page>></button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

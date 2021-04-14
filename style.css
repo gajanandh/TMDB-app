@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: rgb(3, 24, 71);
+  overflow-x: hidden;
+}
+h1 {
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  padding: 10px;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.formel {
+  display: flex;
+}
+input {
+  padding: 5px;
+  border-radius: 50px;
+  align-self: right;
+  outline: none;
+  border: none;
+  margin-top: 2px;
+}
+button {
+  border-radius: 15px;
+  height: 30px;
+  margin: 0px 5px;
+  padding: 0px 15px;
+  background: rgb(22, 60, 143);
+  color: white;
+  outline: none;
+  border: none;
+}
+button:hover {
+  background: rgb(1, 10, 27);
+  color: white;
+}
+#image {
+  width: 100%;
+  height: 350px;
+  color: white;
+}
+#movie {
+  max-width: 250px;
+  margin: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  /* display: flex; */
+}
+.overview {
+  position: absolute;
+  background: white;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+  /* letter-spacing: 1px; */
+  transform: translateY(+100%);
+  padding: 10px;
+  max-height: 100%;
+  transition: transform 0.25s ease-out;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+}
+#movie:hover .overview {
+  transform: translateY(0%);
+}
+.details {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+span {
+  padding: 5px;
+  background: rgb(3, 14, 34);
+  border-radius: 5px;
+  height: 1rem;
+  width: 2rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+a:active {
+  color: white;
+}
+select {
+  background: rgb(1, 10, 27);
+  color: white;
+  border-radius: 15px;
+}
+label {
+  color: white;
+}
+#moreinfobtn {
+  align-self: center;
+  padding: 5px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.removepagination {
+  display: none;
+}
+.nomovies {
+  color: white;
+  font-size: 2rem;
+}
+
+.moviedetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* flex-wrap: wrap; */
+  height: 100%;
+}
+.movieposter {
+  width: 350px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 30px;
+}
+.discription {
+  padding: 20px;
+}
+p {
+  color: white;
+  padding: 10px;
+  word-wrap: break-word;
+}
+h3 {
+  color: white;
+}
+.movieinfo a {
+  color: white;
+  padding: 10px;
+  background: rgb(22, 20, 105);
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: 20px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cast {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 15px;
+  text-align: center;
+}
+.cast::-webkit-scrollbar {
+  display: hidden;
+}
+.cast img {
+  width: 100px;
+  height: 150px;
+  border-radius: 50px;
+}
+.cast h4 {
+  color: white;
+  font-weight: 100;
+  opacity: 50%;
+}
+.crewtitle {
+  color: white;
+  font-size: 2rem;
+  padding: 5px;
+  margin-left: 10px;
+}
+.castflex {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background: rgb(18, 20, 56);
+}
+.paginationoff {
+  display: none;
+}
+.movieinfohidden {
+  display: none;
+}
+
+@media screen and (min-width: 350px) and( max-width: 450px) {
+  .movieposter {
+    width: 80%;
+  }
+  .moviedetails {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 500px) {
+  .movieposter {
+    width: 80%;
+    height: 450px;
+  }
+  .moviedetails {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    margin: auto 43px;
+  }
+  .movieposter {
+    width: 80%;
+    height: 450px;
+  }
+  .moviedetails {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  .movieposter {
+    width: 80%;
+    height: 650px;
+    align-self: center;
+  }
+  .moviedetails {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+  .moviedetails {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+  .movieposter {
+    width: 80%;
+    height: 350px;
+  }
+  .moviedetails {
+    flex-wrap: wrap;
+  }
+}
