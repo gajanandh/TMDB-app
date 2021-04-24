@@ -115,7 +115,7 @@ async function getmoviedetails(id) {
 
         castdetails.innerHTML +=
             `<div class="castflex" id="slider">
-                    <div class="castimg"><img src="${profile_path ? (imgurl + profile_path) : "failedcastimg.png"}" alt="image not found" class="movieposter" /></div>
+                    <div class="castimg"><img src="${profile_path ? (imgurl + profile_path) : "failedcastimg.PNG"}" alt="image not found" class="movieposter" /></div>
             <div class="castname"><h3>${name}</h3><h4>${character}</h4></div>
             </div>`
 
